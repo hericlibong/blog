@@ -1,0 +1,89 @@
+baseURL = 'https://hericlibong.github.io/'
+languageCode = 'en-usa'
+title = 'hericblog'
+theme = 'LoveIt'
+
+# language name ["English", "简体中文", "Français", "Polski", ...]
+languageName = "English"
+
+
+# whether to include Chinese/Japanese/Korean
+#hasCJKLanguage = false
+
+
+# # default amount of posts in each pages
+# paginate = 4
+# # google analytics code [UA-XXXXXXXX-X]
+# googleAnalytics = ""
+# # copyright description used only for seo schema
+# copyright = ""
+
+# # whether to use robots.txt
+# enableRobotsTXT = true
+# # whether to use git commit log
+#enableGitInfo = true
+# # whether to use emoji code
+enableEmoji = true
+
+
+# ignore some build errors
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+# Author config
+[author]
+  name = "Heric Libong"
+  email = "hericlibong@gmail.com"
+  #link = ""
+
+# Menu config
+# [menu]
+#   [[menu.main]]
+#     weight = 1
+#     identifier = "posts"
+#     # you can add extra information before the name (HTML format is supported), such as icons
+#     pre = ""
+#     # you can add extra information after the name (HTML format is supported), such as icons
+#     post = ""
+#     name = "Posts"
+#     url = "/posts/"
+#     # title will be shown when you hover on this menu link
+#     title = ""
+#   [[menu.main]]
+#     weight = 2
+#     identifier = "tags"
+#     pre = ""
+#     post = ""
+#     name = "Tags"
+#     url = "/tags/"
+#     title = ""
+#   [[menu.main]]
+#     weight = 3
+#     identifier = "categories"
+#     pre = ""
+#     post = ""
+#     name = "Categories"
+#     url = "/categories/"
+#     title = ""
+
+# [params]
+#   defaultTheme = "auto"
+#   # public git repo url only then enableGitInfo is true
+#   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
+#   gitRepo = "https://github.com/dillonzq/LoveIt"
+#   # which hash function used for SRI, when empty, no SRI is used
+#   # ["sha256", "sha384", "sha512", "md5"]
+#   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
+#   # ["sha256", "sha384", "sha512", "md5"]
+#   fingerprint = ""
+#   # date format
+#   # 日期格式
+#   dateFormat = "2006-01-02"
+#   # website title for Open Graph and Twitter Cards
+#   # 网站标题, 用于 Open Graph 和 Twitter Cards
+#   title = "hericblog"
+#   # website description for RSS, SEO, Open Graph and Twitter Cards
+#   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
+#   description = "Hugo theme - LoveIt"
+#   # website images for Open Graph and Twitter Cards
+#   # 网站图片, 用于 Open Graph 和 Twitter Cards
+#   images = ["/logo.png"]
