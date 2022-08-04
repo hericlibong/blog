@@ -1,29 +1,32 @@
 baseURL = 'https://hericlibong.github.io/'
-languageCode = 'en-usa'
+languageCode = 'en'
 title = 'hericblog'
 theme = 'LoveIt'
+defaultContentLanguage = "en"
 
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 
 
+
 # whether to include Chinese/Japanese/Korean
-#hasCJKLanguage = false
+hasCJKLanguage = false
 
 
 # # default amount of posts in each pages
-# paginate = 4
+paginate = 4
 # # google analytics code [UA-XXXXXXXX-X]
-# googleAnalytics = ""
+googleAnalytics = ""
 # # copyright description used only for seo schema
 # copyright = ""
 
 # # whether to use robots.txt
-# enableRobotsTXT = true
+enableRobotsTXT = true
 # # whether to use git commit log
 #enableGitInfo = true
 # # whether to use emoji code
 enableEmoji = true
+summaryLength = 20
 
 
 # ignore some build errors
@@ -36,37 +39,37 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #link = ""
 
 # Menu config
-# [menu]
-#   [[menu.main]]
-#     weight = 1
-#     identifier = "posts"
+[menu]
+   [[menu.main]]
+     weight = 1
+     identifier = "posts"
 #     # you can add extra information before the name (HTML format is supported), such as icons
-#     pre = ""
+     pre = ""
 #     # you can add extra information after the name (HTML format is supported), such as icons
-#     post = ""
-#     name = "Posts"
-#     url = "/posts/"
+     post = ""
+     name = "Posts"
+     url = "/posts/"
 #     # title will be shown when you hover on this menu link
 #     title = ""
-#   [[menu.main]]
-#     weight = 2
-#     identifier = "tags"
-#     pre = ""
-#     post = ""
-#     name = "Tags"
-#     url = "/tags/"
-#     title = ""
-#   [[menu.main]]
-#     weight = 3
-#     identifier = "categories"
-#     pre = ""
-#     post = ""
-#     name = "Categories"
-#     url = "/categories/"
-#     title = ""
+   [[menu.main]]
+     weight = 2
+     identifier = "tags"
+     pre = ""
+     post = ""
+     name = "Tags"
+     url = "/tags/"
+     title = ""
+   [[menu.main]]
+     weight = 3
+    identifier = "categories"
+    pre = ""
+     post = ""
+     name = "Categories"
+     url = "/categories/"
+     title = ""
 
-# [params]
-#   defaultTheme = "auto"
+[params]
+   defaultTheme = "auto"
 #   # public git repo url only then enableGitInfo is true
 #   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
 #   gitRepo = "https://github.com/dillonzq/LoveIt"
@@ -77,13 +80,365 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 #   fingerprint = ""
 #   # date format
 #   # 日期格式
-#   dateFormat = "2006-01-02"
+   dateFormat = "2006-01-02"
 #   # website title for Open Graph and Twitter Cards
 #   # 网站标题, 用于 Open Graph 和 Twitter Cards
-#   title = "hericblog"
+   title = "hericblog"
 #   # website description for RSS, SEO, Open Graph and Twitter Cards
 #   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
-#   description = "Hugo theme - LoveIt"
+   description = "Hugo theme - LoveIt"
 #   # website images for Open Graph and Twitter Cards
 #   # 网站图片, 用于 Open Graph 和 Twitter Cards
-#   images = ["/logo.png"]
+   images = ["/logo.png"]
+
+[params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    # 桌面端导航栏模式 ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # mobile header mode ["fixed", "normal", "auto"]
+    # 移动端导航栏模式 ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # Header title config
+    # 页面头部导航栏标题配置
+    [params.header.title]
+      # URL of the LOGO
+      # LOGO 的 URL
+      logo = ""
+      # title name
+      # 标题名称
+      name = "HlStories"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      # you can add extra information after the name (HTML format is supported), such as icons
+      # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+      #post = "data chronicles, blogging, practice"
+      # whether to use typeit animation for title name
+      # 是否为标题显示打字机动画
+      typeit = false  
+
+[params.footer]
+    enable = true
+    # Custom content (HTML format is supported)
+    # 自定义内容 (支持 HTML 格式)
+    custom = ""
+    # whether to show Hugo and theme info
+    # 是否显示 Hugo 和主题信息
+    hugo = true
+    # whether to show copyright info
+    # 是否显示版权信息
+    copyright = true
+    # whether to show the author
+    # 是否显示作者
+    author = true
+    # site creation time
+    # 网站创立年份
+    since = 2019
+    # ICP info only in China (HTML format is supported)
+    # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
+    icp = ""
+    # license info (HTML format is supported)
+    # 许可协议信息 (支持 HTML 格式)
+    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.section]
+  paginate = 20
+  dateFormat = "01-02"
+  rss = 10
+
+  # List (category or tag) page config
+  # List (目录或标签) 页面配置
+[params.list]
+  paginate = 20
+  dateFormat = "01-02"
+  rss = 10
+
+  # App icon config
+  # 应用图标配置
+[params.app]
+  title = "HlStories"
+  noFavicon = false
+  svgFavicon = ""
+  themeColor = "#ffffff"
+  iconColor = "#5bbad5"
+
+[params.search]
+    enable = true
+    # type of search engine ["lunr", "algolia"]
+    # 搜索引擎的类型 ["lunr", "algolia"]
+    type = "algolia"
+    # max index length of the chunked content
+    # 文章内容最长索引长度
+    contentLength = 4000
+    # placeholder of the search bar
+    # 搜索框的占位提示语
+    placeholder = ""
+    # max number of results length
+    # 最大结果数目
+    maxResultLength = 10
+    # snippet length of the result
+    # 结果内容片段长度
+    snippetLength = 30
+    # HTML tag name of the highlight part in results
+    # 搜索结果中高亮部分的 HTML 标签
+    highlightTag = "em"
+    # whether to use the absolute URL based on the baseURL in search index
+    # 是否在搜索索引中使用基于 baseURL 的绝对路径
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+[params.home]
+   rss = 10
+   [params.home.profile]
+      enable = true
+      #gravatarEmail = "hericlibong@gmail.com"
+      avatarURL = "/images/avatar.jpeg"
+      title = ""
+      subtitle = "data chronicles | blogging | practice..."
+      typeit = true
+      social = true
+      disclaimer = ""
+    
+    [params.home.posts]
+       enable = true
+       paginate = 6
+
+[params.social]
+   GitHub = "hericlibong"
+   Linkedin = "hericlibong"
+   Twitter = "bongli"
+   Email = "hericlibong@gmail.com"
+
+[params.page]
+   hiddenFromHomePage = false
+   hiddenFromSearch = false
+   twemoji = false
+   lightgallery = false
+   ruby = true
+   fraction = true
+   fontawesome = true
+   linkToMarkdown = true
+   rssFullText = false
+    [params.page.toc]
+      enable = true
+      keepStatic = false
+    [params.page.math]
+      enable = true
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      copyTex = true
+      mhchem = true
+    [params.page.code]
+        copy =  true
+        maxShownLines = 50
+    [params.page.mapbox]
+        accessToken = "pk.eyJ1IjoiaGVyaWMiLCJhIjoiY2lwcHh2cHpwMDA1aWhybnBqbHQzOXQydCJ9.4CM5ZOcHIkaSnKnXywwJlA"
+        lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
+        darkStyle =  "mapbox://styles/mapbox/dark-v10?optimize=true"
+        navigation = true
+        geolocate = true
+        scale = true
+        fullscreen = true
+    [params.page.share]
+        enable = true
+        twitter = true
+        Linkedin = true
+        Facebook = false
+        Whatsapp = true
+    [params.page.comment]
+        enable = false 
+
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # located in "assets/" 位于 "assets/"
+        # Or 或者
+        # someCSS = "https://cdn.example.com/some.css"
+      [params.page.library.js]
+        # someJavascript = "some.js"
+        # located in "assets/" 位于 "assets/"
+        # Or 或者
+        # someJavascript = "https://cdn.example.com/some.js"
+    # Page SEO config
+    # 页面 SEO 配置
+    [params.page.seo]
+      # image URL
+      # 图片 URL
+      images = []
+      # Publisher info
+      # 出版者信息
+      [params.page.seo.publisher]
+        name = "xxxx"
+        logoUrl = "/images/avatar.png"
+
+  # TypeIt config
+  # TypeIt 配置
+[params.typeit]
+    # typing speed between each step (measured in milliseconds)
+    # 每一步的打字速度 (单位是毫秒)
+    speed = 100
+    # blinking speed of the cursor (measured in milliseconds)
+    # 光标的闪烁速度 (单位是毫秒)
+    cursorSpeed = 1000
+    # character used for the cursor (HTML format is supported)
+    # 光标的字符 (支持 HTML 格式)
+    cursorChar = "|"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+    duration = -1
+
+[params.seo]
+    # image URL
+    # 图片 URL
+    image = "/images/Apple-Devices-Preview.png"
+    # thumbnail URL
+    # 缩略图 URL
+    thumbnailUrl = "/images/screenshot.png"
+ 
+[params.cdn]
+    # CDN data file name, disabled by default
+    # ["jsdelivr.yml"]
+    # located in "themes/LoveIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    # CDN 数据文件名称, 默认不启用
+    # ["jsdelivr.yml"]
+    # 位于 "themes/LoveIt/assets/data/cdn/" 目录
+    # 可以在你的项目下相同路径存放你自己的数据文件:
+    # "assets/data/cdn/"
+    data = "jsdelivr.yml"
+
+
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      # 是否在文档中直接使用 HTML 标签
+      unsafe = true
+  # Table Of Contents settings
+  # 目录设置
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# Sitemap config
+# 网站地图配置
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
+# Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
+
+# Options to make output .md files
+# 用于输出 Markdown 格式文档的设置
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+
+# Options to make output .md files
+# 用于输出 Markdown 格式文档的设置
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+# 用于 Hugo 输出文档的设置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
+
+
+[languages]
+  [languages.en]
+    weight = 1
+    title = "My New Hugo Site"
+    languageCode = "en"
+    languageName = "English"
+    [[languages.en.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Categories"
+      url = "/categories/"
+      title = ""
+
+  [languages.fr]
+    weight = 2
+    title = "Mon nouveau site Hugo"
+    languageCode = "fr"
+    languageName = "Français"
+    [[languages.fr.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Articles"
+      url = "/posts/"
+      title = ""
+    [[languages.fr.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = ""
+    [[languages.fr.menu.main]]
+      weight = 3
+      identifier = "categories"
+      name = "Catégories"
+      pre = ""
+      post = ""
+      url = "/categories/"
+      title = ""
