@@ -26,7 +26,7 @@ enableRobotsTXT = true
 #enableGitInfo = true
 # # whether to use emoji code
 enableEmoji = true
-summaryLength = 20
+summaryLength = 15
 
 
 # ignore some build errors
