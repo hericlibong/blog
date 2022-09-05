@@ -109,7 +109,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       name = "HlStories"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      #pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      pre = "<i class='fa fa-file-code-o' aria-hidden='true'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       #post = "data chronicles, blogging, practice"
@@ -234,7 +235,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       mhchem = true
     [params.page.code]
         copy =  true
-        maxShownLines = 50
+        maxShownLines = 25
     [params.page.mapbox]
         accessToken = "pk.eyJ1IjoiaGVyaWMiLCJhIjoiY2lwcHh2cHpwMDA1aWhybnBqbHQzOXQydCJ9.4CM5ZOcHIkaSnKnXywwJlA"
         lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
@@ -320,7 +321,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     codeFences = true
     guessSyntax = true
     lineNos = true
-    lineNumbersInTable = true
+    lineNumbersInTable = false
+    lineNoStart = 1
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
@@ -343,6 +345,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # 目录设置
   [markup.tableOfContents]
     startLevel = 2
+    ordered = true
     endLevel = 6
 
 # Sitemap config
@@ -385,7 +388,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [languages]
   [languages.en]
     weight = 1
-    title = "My New Hugo Site"
+    title = "HlStories"
     languageCode = "en"
     languageName = "English"
     [[languages.en.menu.main]]
@@ -415,7 +418,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   [languages.fr]
     weight = 2
-    title = "Mon nouveau site Hugo"
+    title = "HlChroniques"
     languageCode = "fr"
     languageName = "Français"
     [[languages.fr.menu.main]]
@@ -442,3 +445,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       post = ""
       url = "/categories/"
       title = ""
+
+
+
+
+  
