@@ -2,10 +2,10 @@ baseURL = 'https://hericlibong.github.io/'
 languageCode = 'en'
 title = 'hericblog'
 theme = 'LoveIt'
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
 
 # language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "English"
+languageName = "French"
 
 
 
