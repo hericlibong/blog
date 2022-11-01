@@ -4,7 +4,7 @@ title: "Rencontre ton député"
 subtitle: "Chroniques de l'Assemblée Nationale du Sénégal"
 date: 2022-09-22T12:25:45Z
 draft: false
-tags : ['Datavisualisation', 'Flourish', Storytelling ]
+tags : ['Datavisualisation', 'Flourish', 'Storytelling' ]
 categorie : ['Dataviz']
 featureDimage : "/images/senassemble.jpeg"
 ---

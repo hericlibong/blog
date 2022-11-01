@@ -2,8 +2,8 @@
 title: "Championnat de F1 2022: Les enjeux de la fin de saison en Graphiques"
 subtitle: "Max Verstappen et Red Bull ont été sacré champions pour la saison 2022, mais des luttes pour les places d'honneur pilotes ét écuries restent très ouvertes" 
 description : "Graphiques animées"
-categorie : ["Dataviz, Data-journalisme"]
-tags : ["dataviz, Flourish, Formule 1"]
+categorie : ['Dataviz', 'datajournalisme']
+tags : ['Datavisualisation', 'Flourish', 'Formule1']
 date: 2022-10-26T23:17:09Z
 draft: false
 featureDimage: "/images/F1 Logo.jpeg"
