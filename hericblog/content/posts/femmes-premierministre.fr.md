@@ -3,7 +3,7 @@ title: "Femmes et premier ministre"
 subtitle : "Comment visualiser les femmes ayant occupé le poste de 1er ministre en 1 graphique"
 date: 2022-09-26T11:40:34Z
 description : "Visualiser les femmes ayant occupé le poste de 1er ministre en 1 graphique"
-draft: false
+draft: true
 tags : ['Datavisualisation', 'Wikidata', 'Python' ]
 categorie : ['Dataviz']
 featureDimage : "/images/femme1erministre.webp"
