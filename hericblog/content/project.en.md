@@ -8,7 +8,7 @@ menu : "main"
 # African Covid DashBoard
 <br>
 
-[![dashboard](/images/screen.jpeg)](https://africovidapp.herokuapp.com/)
+[![dashboard](/images/screen.jpeg)](https://command-geology-hall-jevf.onrender)
 
 
 {{< admonition type=note title=" About the Dashboard" open=false >}}
@@ -26,7 +26,7 @@ It details :
 - Cases recorded in the last 30 days per country
 - A map to geo-locate each country<br>
   
-It is updated at the same time as the data source and deployed on Heroku with [Dash-tools](https://dash-tools.readthedocs.io/en/latest/index.html) 
+It is updated at the same time as the data source and deployed on Render with [Dash-tools](https://dash-tools.readthedocs.io/en/latest/index.html) 
    
 <br>
 
